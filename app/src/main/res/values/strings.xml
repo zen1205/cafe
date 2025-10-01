@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="li_n_h">Liên hệ</string>
+    <string name="i_m_t_kh_u">Đổi mật khẩu</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="khanh_gmail_com">khanh@gmail.com</string>
+    <string name="t_i_kho_n">Tài Khoản</string>
+    <string name="ph_n_h_i">Phản hồi</string>
+    <string name="trang_ch">Trang chủ</string>
+    <string name="todo">TODO</string>
+</resources>
