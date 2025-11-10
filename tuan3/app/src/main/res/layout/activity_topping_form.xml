@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvFormTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÊM TOPPING MỚI"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Topping:"
+        android:id="@+id/tvToppingNameLabel"/>
+
+    <EditText
+        android:id="@+id/etToppingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:labelFor="@id/tvToppingNameLabel"
+        android:hint="Ví dụ: Trân châu đường đen"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá (VNĐ):"
+        android:id="@+id/tvToppingPriceLabel"/>
+
+    <EditText
+        android:id="@+id/etToppingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:labelFor="@id/tvToppingPriceLabel"
+        android:hint="Chỉ nhập số, ví dụ: 5000"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trạng thái còn hàng:"
+            android:textSize="16sp"
+            android:id="@+id/tvSwitchLabel"/>
+
+        <Switch
+            android:id="@+id/swAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:contentDescription="@string/topping_available_status_desc" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LƯU TOPPING"/>
+
+</LinearLayout>

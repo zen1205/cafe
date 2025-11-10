@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvToppingNameAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Topping"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tvToppingPriceAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá: 5.000 VNĐ"/>
+        <TextView
+            android:id="@+id/tvToppingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: Còn hàng"
+            android:textColor="@android:color/holo_green_dark"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnEditTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginEnd="8dp"
+        android:minWidth="48dp"             android:minHeight="48dp"            android:contentDescription="Chỉnh sửa Topping" /> <ImageButton
+    android:id="@+id/btnDeleteTopping"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@android:drawable/ic_menu_delete"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:minWidth="48dp"             android:minHeight="48dp"            android:contentDescription="Xóa Topping" /> </LinearLayout>

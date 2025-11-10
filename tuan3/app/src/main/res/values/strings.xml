@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">tuan3</string>
+    <string name="topping_available_status_desc">Trạng thái topping còn hàng hoặc hết hàng</string>
+</resources>
