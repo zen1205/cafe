@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="feedback_topics">
+        <item>Chọn chủ đề</item>
+        <item>Chất lượng Sản phẩm</item>
+        <item>Dịch vụ Giao hàng</item>
+        <item>Lỗi Ứng dụng/Kỹ thuật</item>
+        <item>Thái độ Nhân viên</item>
+        <item>Góp ý khác</item>
+    </string-array>
+</resources>
