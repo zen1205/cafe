@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvProductFormTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÊM ĐỒ UỐNG MỚI"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Đồ uống:"
+            android:id="@+id/tvProductNameLabel"/>
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:labelFor="@id/tvProductNameLabel" android:hint="Ví dụ: Cà phê Sữa Đá"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá (VNĐ):"
+            android:id="@+id/tvProductPriceLabel"/>
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:labelFor="@id/tvProductPriceLabel" android:hint="Chỉ nhập số, ví dụ: 35000"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả:"
+            android:id="@+id/tvProductDescLabel"/>
+        <EditText
+            android:id="@+id/etProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:labelFor="@id/tvProductDescLabel"
+            android:lines="3"
+            android:hint="Mô tả ngắn gọn về đồ uống"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL Ảnh:"
+            android:id="@+id/tvProductUrlLabel"/>
+        <EditText
+            android:id="@+id/etProductImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:labelFor="@id/tvProductUrlLabel"
+            android:hint="Dán liên kết ảnh tại đây"
+            android:inputType="textUri"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivProductImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="#EEE"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Xem trước ảnh đồ uống"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trạng thái còn hàng:"
+                android:textSize="16sp"
+                android:id="@+id/tvSwitchLabel"/>
+            <Switch
+                android:id="@+id/swProductAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:minWidth="48dp"  android:checked="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU ĐỒ UỐNG"/>
+
+    </LinearLayout>
+</ScrollView>
